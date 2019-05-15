@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://use.typekit.net/huk7sln.css">
+	<title>aboutpage</title>
+	<link rel="stylesheet" type="text/css" href="./resources/CSS/Max.css">
+
+ <body style="background-color: black;">
+
+<div	
+
+
+<div class="menu">
+	<div
+	class="leftlogo">
+
+
+	<img class="img2"  src="./resources/image/Minititle.png" alt="leftlogo" style="height: 40px; width: 178px; margin-top: -1vw;"></div>
+
+	<div>
+		<style>
+.dropbtn {
+  font-family: din-1451-lt-pro-engschrift;
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #C1DD3F;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-family: din-1451-lt-pro-engschrift;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: white;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+<h2></h2>
+<p></p>
+
+<div class="dropdown">
+
+  <button onclick="myFunction(this)" class="dropbtn" id="menu"><img class="img3" src="./resources/image/bee.png" alt="rightlogo" 
+		style="
+		    height: 30px;
+		    width: 40px;
+		    align-content: : right;
+		    margin-top: -4vw;
+
+		"></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="index.html">Contact</a>
+  </div>
+</div>
+
+<script>
+
+function myFunction(e) {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+	</div>
+</div>
+<div class="shows">
+<h1 style="font-family: din-1451-lt-pro-engschrift;
+	text-align: center;
+	font-size: 150px;
+	color: #C1DD3F;"
+    >ABOUT</h1></div>
+
+
+
+
+
+
+<div class="aboutpara">
+	<div style="font-family: din-1451-lt-pro-engschrift; color: white;"><h1>The Honey Hive Gallery is meant to be an inviting and accessible creative space for all kinds of people in the SF/Bay Area art community and beyond. The gallery is mostly known as one of the very few places in San Francisco to host art and music events open to all ages! The vast majority of events here are and have been donation-based(meaning N.O.T.A.F.L.O.F.). The gallery also houses a small group of local artists collectively renting personal studio spaces. Past events have included a wide variety of showcases and workshops, such as: art shows, concerts, writer's workshops, poetry slams, open mics, figure drawing, screen printing classes, yoga classes, etc.</h1>
+</div>
+</div>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="./resources/image/techno.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="./resources/image/sunglasses.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="./resources/image/artHH.png" style="width:100%">
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="./resources/image/poetry.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="./resources/image/rapper.png" style="width:100%">
+  </div>
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+
+</head>
+
+
+</html>

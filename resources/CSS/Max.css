@@ -32,6 +32,10 @@ margin-left: -15vw;
 	height: 20%;
 	width: 20%;
 }
+.img3{
+height: 20%;
+width: 20%;
+text-align: right;}
 .imgAB{
 	position: absolute;
 	height: 40%;
@@ -176,15 +180,6 @@ vertical-align: top;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
-}
-.dropbtn {
-  font-family: din-1451-lt-pro-engschrift;
-  background-color: black;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
 }
 
 .rightlogo{
